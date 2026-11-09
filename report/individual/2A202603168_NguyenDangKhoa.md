@@ -4,11 +4,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Lớp:
-- Link repo bài làm:
+- Họ tên: Nguyễn Đăng Khoa
+- MSSV: 2A202603168
+- Email: khoabeoloidom@gmail.com
+- Lớp: L2A
+- Link repo bài làm: https://github.com/NguyenKhoa1290/K5-L2A-DAY02-NguyenDangKhoa-2A202603168-ObjectDetection
 - Link Colab đã chạy:
 
 ## 2. Schema và mini guideline
