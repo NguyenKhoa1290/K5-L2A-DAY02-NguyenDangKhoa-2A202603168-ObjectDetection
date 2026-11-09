@@ -22,6 +22,6 @@
 
 | Ảnh | Tình huống | Quyết định cuối | Lý do theo schema |
 | --- | --- | --- | --- |
-| `drive_...` | Xe SUV/xe con ở xa, chỉ thấy phần thân và kính xe nhưng không rõ thùng hàng | `car` | Hình dáng mô tả xe chở người, không có đặc điểm thùng hàng hay thân dài của `truck`; phù hợp với schema `car` khi phần nhìn thấy đủ để nhận diện. |
-| `drive_...` | Van giao hàng hoặc minivan chở hàng ở góc nghiêng | `van` | Xe có khung cao, hình hộp/van rõ hơn xe con, nhưng không có nhiều cửa kính dài và tính chất chở khách tuyến như `bus`. |
-| `drive_...` | Xe tải/cabin có thùng hàng rõ hoặc đầu kéo dài | `truck` | Thùng hàng, cabin dài hoặc khung xe chuyên chở hàng là đặc điểm chính của `truck`; không nên xếp vào `car` nếu có hình dáng hàng hóa rõ ràng. |
+| `drive_001.jpg` | Xe con bị che khuất bởi cột điện màu trắng xám, vẫn có thể nhận diện rõ ràng là xe con | `car` | Trong quy tăc chung, nếu phần nhìn thấy vẫn đủ rõ để nhận diện, mình vẫn đánh nhãn |
+| `drive_009.jpg` | Một phần xe buýt bị che khuất bởi một xe buýt khác | Chỉ đánh phần còn nhìn thấy, không đánh dự đoán cả xe | Theo quy tắc về vật thể bị che khuất |
+| `drive_011.jpg` | Xe van có hình dạng đầu giống xe con, ảnh mờ nhưng vẫn đủ to để nhận biết | `van` | Xe không có cửa kính sau, thân chữ nhật ngắn |
