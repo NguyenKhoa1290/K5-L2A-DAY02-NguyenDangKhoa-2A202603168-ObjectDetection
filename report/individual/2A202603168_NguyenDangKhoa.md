@@ -56,10 +56,13 @@ Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi �
 Trả lời bốn câu hỏi cuối notebook:
 
 1. Lớp nào recall thấp nhất? Ảnh nào minh họa?
+Ảnh truck, label.jpg
 2. Nếu mAP50 cao nhưng mAP50–95 thấp, cần kiểm điều gì trên box?
+Cần xem số lượng các nhãn có bằng nhau hay không
 3. Lỗi class nào có thể liên quan guideline? Dữ kiện nào hỗ trợ nhận xét?
+Có thể là thứ tự nhãn, có thể sử dụng file .yaml để kiểm chứng
 4. Vì sao không dùng 10 ảnh eval để train? Vai trò validation của chúng trong notebook là gì?
-
+Vì 10 ảnh đó giống như là dữ liệu mà mô hình chưa bao giờ thấy, vai trò giống như là lấy một bài kiểm tra mà hệ thống chưa thấy bao giờ đánh giá xem mô hình đó có tốt hay không
 ## 6. Khó khăn và cách xử lý
 
 | Bước/thời điểm | Lỗi quan sát | Cách đã thử | Kết quả/còn thiếu |
