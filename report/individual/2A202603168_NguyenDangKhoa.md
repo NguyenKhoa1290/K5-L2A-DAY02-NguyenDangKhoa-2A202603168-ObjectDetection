@@ -9,7 +9,7 @@
 - Email: khoabeoloidom@gmail.com
 - Lớp: L2A
 - Link repo bài làm: https://github.com/NguyenKhoa1290/K5-L2A-DAY02-NguyenDangKhoa-2A202603168-ObjectDetection
-- Link Colab đã chạy:
+- Link Colab đã chạy: https://colab.research.google.com/drive/1cond_KZpiB4DCNA3IDsMUdAwEQJYhgqG?usp=sharing
 
 ## 2. Schema và mini guideline
 
@@ -17,24 +17,24 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 
 ## 3. Annotation và self-QC
 
-- Số file nhãn train:
-- Kết quả checker và lỗi đã xử lý:
-- Danh sách ít nhất 10 ảnh đã rà bằng mắt:
+- Số file nhãn train: 40
+- Kết quả checker và lỗi đã xử lý: Lúc đầu chưa đạt, phát hiện lỗi nhầm nhãn (Thứ tự nhãn), xử lý bằng cách tạo dự án mới với thứ tự nhãn ngược với nhãn mặc định, sửa file .yaml để khớp lai, kết quả đạt
+- Danh sách ít nhất 10 ảnh đã rà bằng mắt: 
 - Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa:
-- Commit khóa nhãn ban đầu:
+- Commit khóa nhãn ban đầu: Commit có tên: "Chưa sửa"
 
 ## 4. Gold QC và rework
 
-| Chỉ số | Trước sửa | Sau sửa nếu có |
-|---|---:|---:|
-| TP | | |
-| FP | | |
-| FN | | |
-| Precision | | |
-| Recall | | |
-| F1 | | |
-| mean_iou_of_matches | | |
-| passed | | |
+| Chỉ số | Sau sửa |
+|---|---:|
+| TP | 517 |
+| FP | 112 |
+| FN | 136 |
+| Precision | 0.8219 |
+| Recall | 0.7917 |
+| F1 | 0.8066 |
+| mean_iou_of_matches | 0.8759 |
+| passed | true |
 
 Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi ảnh, lỗi đã kiểm, quyết định sửa/giữ và lý do. Không suy nguyên nhân chỉ từ FP/FN. Không có rework thì ghi rõ.
 
@@ -46,10 +46,10 @@ Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi �
 
 | Chỉ số trên 10 ảnh eval | Giá trị |
 |---|---:|
-| Precision | |
-| Recall | |
-| mAP50 | |
-| mAP50–95 | |
+| Precision | 0.3135648779036495 |
+| Recall | 0.48027263819646837 |
+| mAP50 | 0.4001438816572176 |
+| mAP50–95 | 0.26593267011548544 |
 
 Đặt cả 2 folder `assets/eval_predictions/` và `assets/yolo26_runs/` (giải nén từ `day2_colab_outputs.zip`) cạnh báo cáo và dẫn link tương đối. Không chỉ ghi số; chỉ ra ít nhất một ảnh và vật thể cụ thể.
 
@@ -64,7 +64,7 @@ Trả lời bốn câu hỏi cuối notebook:
 
 | Bước/thời điểm | Lỗi quan sát | Cách đã thử | Kết quả/còn thiếu |
 |---|---|---|---|
-| | | | |
+| 8h45-AM-11/10/2026|Check theo Gold train, bị lỗi đánh nhãn giữa xe bus, truck, van| tạo dự án mới trong CVAT để đổi vị trí nhãn | Thành công đưa từ 60% f1-score lên 80 để sang bước train |
 
 ## 7. Tự đánh giá theo rubric
 
